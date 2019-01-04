@@ -1,0 +1,149 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+		a, ul, li, article, aside, footer, header, nav, section {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+			/* Fim Eric Meyer reset */
+			/* utilidades */
+			*, *:before, *:after {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.cf:before,
+		.cf:after {
+			content: " ";
+			display: table;
+		}
+		.cf:after {
+			clear: both;
+		}
+		.cf {
+			*zoom: 1;
+		}
+		/* Fim utilidades */
+
+
+
+* {
+    font-family: sans-serif, arial, verdana;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(190, 190, 190);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    background-color: rgb(190, 190, 190);
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.barra-topo {
+    background-color: rgb(27, 70, 115);
+    margin: 0px;
+    margin-top: 0px;
+    width: 100% auto;
+    padding: 0.3%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+
+.linhaVermelha {
+    background-color: rgb(162, 42, 42);
+    width: 100%;
+    height: 1px;
+}
+
+.bg-escuro {
+    background-color: rgb(190, 190, 190);
+}
+
+
+.active {
+    background-color: rgb(116, 133, 117);
+}
+
+
+/* Aqui começa o corpo principal das notícias :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.float-left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.pad1 {
+    padding: 1%;
+}
+.pad2 {
+    padding: 2%;
+}
+
+.noticias-principais {
+    margin: 2% 2% 2% 2%;
+    border: 1px solid rgb(225, 225, 225);
+    
+}
+
+.principais-imagens {
+    display: inline-block;
+    width: 30%;
+    
+}
+.principais-textos {
+    display: inline-block;
+    width: 30% auto;
+    
+}
+
+.aside {
+    margin: 2% 2% 2% 2%;
+    padding: 1%;
+    border: 1px solid rgb(225, 225, 225);
+    
+}
+
+
+/* Aqui começa o footer :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.rodape {
+    background-color: rgb(27, 70, 115);
+    margin: 0px;
+    margin-top: 1%;
+    width: 100% auto;
+    height: auto;
+    padding: 0.5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+
+
+
