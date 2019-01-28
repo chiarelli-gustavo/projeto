@@ -1,0 +1,142 @@
+* {
+    font-family: sans-serif, arial, verdana;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.barra-topo {
+    background-color: rgb(27, 70, 115);
+    margin: 0px;
+    margin-top: 0px;
+    width: 100% auto;
+    padding: 0.3%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+.barra-menu {
+    background-color: rgb(198, 198, 198);
+    margin: 0px;
+    margin-top: 0px;
+    width: 100% auto;
+    padding: 1%;
+    color: rgb(27, 70, 115);
+    
+}
+
+.linhaVermelha {
+    background-color: rgb(162, 42, 42);
+    width: 100%;
+    height: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul:hover {
+    list-style: none;
+    background-color: rgb(225, 225, 225);
+}
+
+li {
+    padding: 0.4%;
+}
+
+.menu-principal{
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(162, 42, 42);
+}
+
+/* Aqui começa o corpo principal das notícias :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.float-left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.pad1 {
+    padding: 1%;
+}
+.pad2 {
+    padding: 2%;
+}
+
+.noticias-principais {
+    margin: 2% 2% 2% 2%;
+    border: 1px solid rgb(225, 225, 225);
+    
+}
+
+.principais-imagens {
+    display: inline-block;
+    width: 30%;
+    
+}
+.principais-textos {
+    display: inline-block;
+    width: 30% auto;
+    
+}
+
+.aside {
+    margin: 2% 2% 2% 2%;
+    padding: 1%;
+    border: 1px solid rgb(225, 225, 225);
+    
+}
+
+
+/* Aqui começa o footer :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.rodape {
+    background-color: rgb(27, 70, 115);
+    margin: 0px;
+    margin-top: 1%;
+    width: 100% auto;
+    height: 100%;
+    padding: 0.5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+@media screen and (min-width:400px){
+ 
+    .noticias-principais {
+    margin: 2% 2% 2% 2%;
+    border: 1px solid rgb(225, 225, 225);
+    float:left;
+    width: 65%;
+        
+}
+    .aside {
+    margin: 2% 2% 2% 2%;
+    padding: 1%;
+    border: 1px solid rgb(225, 225, 225);
+    float: left;
+    width: 18%;
+    
+}
+    
+}
+
+
+

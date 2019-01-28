@@ -1,0 +1,249 @@
+/* CSS Document */
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*
+body {
+
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+    line-height: 1.5em;
+    
+}
+h1 {
+	color: #2c2c2c;
+	font-size: 8em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(30, 30, 67);
+}
+
+a:hover {
+    color: rgb(80, 130, 225);
+}
+
+a:visited {
+    color: rgb(50, 50, 50);
+}
+
+input[type=text], input[type=password]{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1.2em;
+    display: inline-block; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+*/
+
+.espaco2{
+margin: 2%;    
+    
+}
+
+.padding1 {
+    padding: 1%;
+}
+
+.largura5 {
+    width: 5%;
+    
+}
+
+.largura90 {
+    width: 90%;
+}
+
+.largura70 {
+    width: 70%;
+}
+
+.img100 {
+    width: 100%;
+    height: auto;
+} 
+
+.janelaLogin {
+	display: block; 
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 5%;
+	border: 2px;
+	border-style: solid;
+	border-color:  rgb(30, 30, 67);
+	padding: 10px;
+	text-align: center;
+    background-color: rgb(230,230,230);
+    color: rgb(30, 30, 67);
+}
+
+.alturaTotal {
+    height: 100% auto;
+    border: 1px solid black;
+}
+
+.boxmetade {
+	display: inline-block;	
+    margin-top: 9%;
+    width: 35%;
+    height: 100% auto;
+    padding: 5%;
+    background-color: rgb(230,230,230);
+    float:left;  
+    
+}
+
+.min-height-titulos {
+    min-height: 4em;
+}
+
+.min-height {
+    min-height: 50%;
+}
+
+.titulos-overflow {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.barra-superior {
+    background-color: rgb(30, 30, 67);
+    margin-left: 0px;
+    width: 100%;
+    height: 60px;
+    padding: 1%;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+.menu-pc {
+
+	width: 15%;
+	color: #000000;
+        margin-right: 5%;
+        padding: 0.5%;
+
+        background-color: rgb(220, 220, 220);
+        border: solid 1px;
+        border-color: rgb(30, 30, 67);
+        color: rgb(30, 30, 67);
+        text-decoration: none;
+        text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+        
+		
+	}
+
+
+
+.menu-pc ul {
+	padding: 5px;
+	margin-right: 2%;
+}
+
+.menu-pc ul li {
+		list-style-type: none;	
+        padding: 12px;
+		color: 	rgb(30, 30, 67);
+		border: 1px;
+		background: linear-gradient(#ccc, #fff);
+		
+	}
+
+.pos-esq {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+.button {
+    border: solid 1px;
+    border-color: rgb(30, 30, 67);
+    background-color: rgb(30, 30, 67);
+    color: rgb(245, 245, 245);
+    padding: 12px 20px;
+    
+}
+
+@media screen and (max-width:935px) {
+
+     .janelaLogin {
+        width: 94%;
+    }
+    
+    input[type=text], input[type=password]{
+        width: 96%;
+        padding: 12px 20px;
+        margin: 10px 0 25px 0;
+        font-size: 1.2em;
+        display: inline-block; /* limita ao conteúdo do div pai*/
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    .barra-superior {
+        height: 18%;
+    }
+    
+} 
+
+
+/*
+
+@media screen and (max-width:500px) {
+	body{
+		font-size: 1.3em;
+	}
+    
+    .janelaLogin {
+        width: 94%;
+    }
+    
+    .barra-superior {
+        height: 18%;
+    }
+    
+    .boxmetade {
+        display: table;
+        width: 89%;
+        height: 100% auto;
+        padding: 5%;
+        background-color: rgb(230,230,230); 
+        float: none;
+    }
+    
+    input[type=text], input[type=password]{
+        width: 96%;
+        padding: 12px 20px;
+        margin: 10px 0 25px 0;
+        font-size: 1.2em;
+        display: inline-block;  
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+} 
+
+/* a definição com asterísco * funciona como um default que diz ao browser as definições padrões da página */
+
