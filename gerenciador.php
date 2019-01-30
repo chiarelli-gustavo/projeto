@@ -17,7 +17,7 @@
     
     <body>
         <header class="container_fluid">
-           <?php include 'navbar'; ?>
+           <?php include 'navbar-adm.php'; ?>
         </header>          
     
     <div class="container-fluid">
@@ -28,12 +28,8 @@
     <div class="cl-3"></div>
    <!-- Rodape  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
     
-    <footer class="containder-fluid">
-        <address>
-            facebook <br />
-            instagram <br />
-        
-        </address>
+    <footer>
+        <?php include'footer.php'; ?>
     </footer>
     </body>
 </html>

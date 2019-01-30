@@ -57,28 +57,43 @@
                                 " Editora: " . $row["editora"]. "<br/>".
                                 " Genero: " . $row["genero"]. "<br/>".
                                 " Preço: " . $row["preco"]. "<br/>";  -->
-
+            <div class="container">
+                <div class="row">
                     <div class="col-md-6 mt-5 align-self-xl-stretch">
-                       
                         <section class="list-group align-self-xl-strech min-height">
-                                  <span class="list-group-item list-group-item-secondary text-center"><img src="imagens/<?php echo $row['foto']; ?>" height="230"/>
-                                        <span class="mt-2"><h4>R$<?php echo $row['preco']; ?></h4></span> <br/>
-                                      <form method="get" action="produto.php?<?php echo $row['id']; ?>">
-                                        <span class="mt-3"><button type="submit" class="btn btn-success">compre agora!</button></span>
-                                      </form>
-                                </span>
-
+                                  <span class="card-img text-center"><img src="imagens/<?php echo $row['foto']; ?>" width="50%" class="ml-0" />      
+                            </span>
                         </section>
                     </div>
                     <div class="col-md-6 mt-5 align-self-xl-stretch">
-                            <h3 class="min-height-titulos titulos-overflow"><?php echo $row['titulo']; ?></h3></span>
-                                  <span class="list-group-item">
-                                        <strong><?php echo $row['autor']; ?></strong><br>
-                                        <span><?php echo $row['editora']. $row['ano']; ?></span> 
-                                        <span style="width: 90%, height: 1px, background-color: #ddd;"></span> <br/>
-                                      <hr>
-                                      <span><?php echo $row['descricao']; ?></span>
+                       <span class="list-group-item">
+                            <span>
+                                <span class="font-weight-light">título</span>
+                                    <h3 class="card-title"><?php echo $row['titulo']; ?></h3>
+                                <span class="font-weight-light">autor</span>
+                                    <h4><?php echo $row['autor']; ?></h4><br/>
+                            </span>
+                                    <span class="font-weight-light">editora/ano</span><br/>
+                                    <span><h4><?php echo $row['editora']; ?> / <?php echo $row['ano']; ?></h4></span> 
+                              <hr>
+                                        <span class="mt-2"><h3>R$<?php echo $row['preco']; ?></h3>
+                                        </span> <br/>
+                              <form method="get" action="adicionar-carrinho.php?<?php echo $row['id']; ?>">
+                                    <span class="mt-3"><button type="submit" class="btn btn-success">adicione ao carrinho</button>
+                                    </span>
+                              </form>
+                        </span>
                     </div>
+                </div>
+            </div> 
+                
+                    <div class="col-md-12 mt-5 align-self-xl-stretch">
+                        <span>
+                            <h3>Descrição</h3>
+                            <p><?php echo $row['descricao']; ?></p>
+                        </span>
+                    </div>
+
 
                     <?php
                         }
@@ -91,6 +106,7 @@
                     ?>
             </div>
         </section>
+    <?php include 'footer.php'?>
     </body>
 </html>
     

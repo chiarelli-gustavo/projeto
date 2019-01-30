@@ -12,42 +12,18 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">
 	</head>
 	<body>
-	
-                <header class="container_fluid">
-                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                    <a class="navbar-brand text-light" href="gerenciador.php">Livraria Simples</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link text-light" href="select.php">Compre (mostrar Livros)</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="cadastro-de-registro.php">Cadastrar Livros</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="editar-estoque.php">Editar Estoque</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light" href="apagar-estoque.php">Apagar do Estoque</a>
-                                </li>
-                                </ul>
-                        </div>
-                </nav>
-            </header>
-
+        <header class="container_fluid">
+            <?php include 'navbar-adm.php'?>
+        </header>
                     
     <div class="container-fluid">
-        <img src="imagens/tema-livraria-2600.jpg" alt="estante virtual cheia de livros" class="ml-0">
+        <img src="imagens/tema-livraria-2600.jpg" width="100%" alt="estante virtual cheia de livros" class="ml-0">
     </div>
     
     <div><h2>Atualizar registros na livraria tabela livros</h2></div>
         
         <div class="container mt-5">
-        <div class="row">  <!--  classe para separar em coluna engloba todo o php-->
+            <div class="row">  <!--  classe para separar em coluna engloba todo o php-->
                     <?php
 
                     //Ele 'chama' o arquivo conexao
@@ -69,7 +45,7 @@
 
                     ?>
                     
-                        <div class="col-md-4 mt-4 align-self-xl-stretch p-7">  
+                        <div class="col col-md-4 mt-4 align-self-xl-stretch p-7">  
 		
                                     <form method="post" action="update.php">
 
@@ -94,7 +70,7 @@
                                             <div class="form-group">
                                                 <span>					
                                                     <label for="autor"> Autor</label>
-                                                <span>
+                                                </span>
                                                 <br />
                                                 <span>
                                                     <input type="text" name="autor" class="form-control" value="<?php echo $row['autor']; ?>"/>
@@ -104,7 +80,7 @@
                                             <div class="form-group">
                                                 <span>					
                                                     <label for="ano"> Ano</label>
-                                                <span>
+                                                </span>
                                                 <br />
                                                 <span>
                                                     <input type="text" name="ano" class="form-control" value="<?php echo $row['ano']; ?>"/>
@@ -115,7 +91,7 @@
                                              <div class="form-group">
                                                 <span>					
                                                     <label for="editora"> Editora</label>
-                                                <span>
+                                                 </span>
                                                 <br />
                                                 <span>
                                                     <input type="text" name="editora" class="form-control" value="<?php echo $row['editora']; ?>"/>
@@ -126,7 +102,7 @@
                                             <div class="form-group">
                                                 <span>					
                                                     <label for="genero"> Genero</label>
-                                                <span>
+                                                </span>
                                                 <br />
                                                 <span>
                                                     <input type="text" name="genero" class="form-control" value="<?php echo $row['genero']; ?>"/>
@@ -138,41 +114,69 @@
                                             <div class="form-group">
                                                 <span>					
                                                     <label for="preco"> Preço R$</label>
-                                                <span>
+                                                </span>
                                                 <span>
                                                     <input type="text" name="preco" class="form-control" value=" <?php echo $row['preco'] ?> "/>
                                                 </span>
 
-                                        
                                             </div>  
                                             <div class="form-group">
                                                 <span>					
-                                                    <label for="foto"> Nome e extensão da foto</label>
+                                                    <label for="desconto"> Desconto</label>
+                                                </span>
+                                                <br />
                                                 <span>
+                                                    <input type="number" name="desconto" class="form-control" value="<?php echo $row['desconto']; ?>"/>
+                                                </span>
+                                            </div>        
+                                            <div class="form-group">
+                                                <span>					
+                                                    <label for="foto"> Nome e extensão da foto</label>
+                                                </span>
                                                 <br />
                                                 <span>
                                                     <input type="text" name="foto" class="form-control" value="<?php echo $row['foto']; ?>"/>
                                                 </span>
-                                            </div> 
+                                            </div>
+                                            <div class="form-group">
+                                                <span>					
+                                                    <label for="estoque"> Estoque</label>
+                                                </span>
+                                                <br />
+                                                <span>
+                                                    <input type="text" name="estoque" class="form-control" placeholder="quantidade no estoque"/>
+                                                </span>
+                                            </div>
+                                            <div class="form-group">
+                                                <span>					
+                                                    <label for="isbn"> ISBN</label>
 
+                                                </span>
+                                                <br />
+                                                <span>
+                                                    <input type="text" name="isbn" class="form-control" placeholder="isbn"/>
+                                                </span>
+                                            </div>
+                                     
                       
                                             <div>
                                                <input type="submit" name="btnEnviar" value="Alterar" class="btn btn-primary mt-3" />
                                             </div>
                                     </form>
-                           </div>                           
-			             
+                                </div>        
+                        
                
-              <?php 
-                            }
-                    }
-                else {
-                    echo "0 resultado";
-                    }
-                mysqli_close ($conn);
-            ?>
-                                                                </div>                             
-		</div>
+                          <?php 
+                                        }
+                                }
+                            else {
+                                echo "0 resultado";
+                                }
+                            mysqli_close ($conn);
+                        ?>
+            
+		      </div>
+        </div>
              
 </body>
 </html>

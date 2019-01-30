@@ -14,33 +14,11 @@
 	<body>
 	
 	<header class="container_fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand text-light" href="gerenciador.php">Livraria Simples</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-light" href="select.php">Compre (mostrar Livros)</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="cadastro-de-registro.php">Cadastrar Livros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="editar-estoque.php">Editar Estoque</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="apagar-estoque.php">Apagar do Estoque</a>
-                    </li>
-                    </ul>
-            </div>
-    </nav>
-</header>
+        <?php include 'navbar-adm.php'?>
+    </header>
 
     <div class="container-fluid">
-        <img src="imagens/tema-livraria-2600.jpg" alt="estante virtual cheia de livros" class="ml-0">
+        <img src="imagens/tema-livraria-2600.jpg" width="100%" alt="estante virtual cheia de livros" class="ml-0">
     </div>
 		<div class="container mt-5">
             
@@ -112,6 +90,7 @@
 							<input type="text" name="preco" class="form-control" placeholder="preco"/>
 						</span>
 					</div>  
+                    c
                     <div class="form-group">
 						<span>					
 							<label for="foto"> Nome e extensão da foto</label>
@@ -121,6 +100,35 @@
 							<input type="text" name="foto" class="form-control" placeholder="foto"/>
 						</span>
 					</div> 
+                            
+                    <div class="form-group">
+						<span>					
+							<label for="descricao"> Descrição</label>
+						<span>
+						<br />
+						<span>
+                            <textarea class="form-control" name="descricao" rows="5" placeholder="descrição"/></textarea>
+							
+						</span>
+					</div>
+                    <div class="form-group">
+						<span>					
+							<label for="estoque"> Estoque</label>
+						<span>
+						<br />
+						<span>
+							<input type="text" name="estoque" class="form-control" placeholder="quantidade no estoque"/>
+						</span>
+					</div>
+                    <div class="form-group">
+						<span>					
+							<label for="isbn"> ISBN</label>
+						<span>
+						<br />
+						<span>
+							<input type="text" name="isbn" class="form-control" placeholder="isbn"/>
+						</span>
+					</div>
 				
                     <div>
 					   <input type="submit" name="btnEnviar" value="Enviar" class="btn btn-primary" />
@@ -131,5 +139,6 @@
 			</div>
 			<div class="col-md-2"></div>
 		</div>
+        <?php include 'footer.php'; ?>
 </body>
 </html>

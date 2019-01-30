@@ -8,8 +8,12 @@ $autor = $_POST['autor'];
 $ano = $_POST['ano'];
 $editora = $_POST['editora'];
 $genero = $_POST['genero'];
+Sdesconto = $_POST['desconto'];
 $preco = $_POST['preco'];
 $foto = $_POST['foto'];
+$descricao = $_POST['descricao'];
+$estoque = $_POST['estoque'];
+$isbn = $_POST['isbn'];
 
 //Ele 'chama' o arquivo conexao
 require_once 'conexao.php';
@@ -17,8 +21,8 @@ require_once 'conexao.php';
 //Passo o comando que quero fazer no banco para variavel $sql
 
 
-$sql = "INSERT INTO livros (titulo, autor, ano, editora, genero, preco, foto) 
-        VALUES ('$titulo', '$autor', $ano, '$editora', '$genero', $preco, '$foto')";
+$sql = "INSERT INTO livros (titulo, autor, ano, editora, genero, desconto, preco, foto, descricao, estoque, isbn) 
+        VALUES ('$titulo', '$autor', $ano, '$editora', '$genero', '$desconto', $preco, '$foto', '$descricao', '$estoque', '$isbn')";
 //quando a variável é número melhor deixá-la sem aspas '', principalmente para poderem ser feitos cálculos 
 
 

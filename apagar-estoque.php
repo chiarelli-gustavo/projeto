@@ -16,33 +16,11 @@
     
     <body>
         <header class="container_fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <a class="navbar-brand text-light" href="gerenciador.php">Livraria Simples</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link text-light" href="select.php">Compre (mostrar Livros)</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="cadastro-de-registro.php">Cadastrar Livros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="editar-estoque.php">Editar Estoque</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="apagar-estoque.php">Apagar do Estoque</a>
-                            </li>
-                            </ul>
-                    </div>
-            </nav>
+           <?php include 'navbar-adm.php'?>
         </header>          
     
     <div class="container-fluid">
-        <img src="imagens/tema-livraria-2600.jpg" alt="estante virtual cheia de livros" class="ml-0">
+        <img src="imagens/tema-livraria-2600.jpg" width="100%" alt="estante virtual cheia de livros" class="ml-0">
     </div>
     <div class="cl-3"></div>
     <div class="cl-6 mt-6"><h2>Esta página apaga itens do banco de dados</h2></div>
@@ -50,11 +28,7 @@
    <!-- Rodape  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
     
     <footer class="containder-fluid">
-        <address>
-            facebook <br />
-            instagram <br />
-        
-        </address>
+        <?php include'footer.php'; ?>
     </footer>
     </body>
 </html>

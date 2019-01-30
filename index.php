@@ -11,12 +11,19 @@
 <body>
     
         <header class="container_fluid">
-            <?php include 'navbar.php'?>
+            <?php 
+                session_start();
+                if(!isset($_SESSION['email'])) {
+                    include ('navbar.php');
+                    }else {
+                        include ('navbar_usuario_logado.php');                
+                   }
+            ?>
         </header>
-<div class="container-fluid">
-        <img src="imagens/tema-livraria-2600.jpg" alt="estante virtual cheia de livros" class="ml-0">
-        <div style="text-align:right"><?php include 'data.php'?></div>
-</div>
+        <div class="container-fluid">
+        <img src="imagens/tema-livraria-2600.jpg" width="100%" alt="estante virtual cheia de livros" class="ml-0">
+        <div style="text-align:right" class="text-align-right p-2 font-weight-light">Data: <?php include 'data.php'?></div>
+        </div>
 
     <section class="container">
         <div class="row">  <!--  classe para separar em coluna engloba todo o php-->
@@ -90,7 +97,7 @@
 
                         </section>
                     </div>
-
+                    
 
                     <?php
                         }
@@ -103,6 +110,7 @@
                     ?>
             </div>
         </section>
+    <?php include 'footer.php'?>
     </body>
 </html>
     

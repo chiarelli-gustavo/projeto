@@ -49,6 +49,10 @@ input[type=text], input[type=password]{
 
 */
 
+.bg_cinza{
+    background-color: #ccc;
+}
+
 .espaco2{
 margin: 2%;    
     

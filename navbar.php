@@ -1,6 +1,4 @@
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <nav class="navbar navbar-expand-xl navbar-dark bg-secondary">
         
         <a class="navbar-brand" href="index.php"><img src="imagens/livra_branco.png" style="height: 40px;"></a>
         
@@ -12,7 +10,7 @@
           
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php">home</a>
+              <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sobre</a>
@@ -23,18 +21,18 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
 
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="categoria.php?genero=administracao">Administração</a>
-                <a class="dropdown-item" href="categoria.php?genero=autoajuda">Autoajuda</a>
-                <a class="dropdown-item" href="categoria.php?genero=ciencias">Ciências</a>
-                <a class="dropdown-item" href="categoria.php?genero=ficcaocientifica">Ficção Ciêntífica</a>
-                <a class="dropdown-item" href="categoria.php?genero=filosofia">Filosofia</a>
-                <a class="dropdown-item" href="categoria.php?genero=historia">História</a>
-                <a class="dropdown-item" href="categoria.php?genero=infantil">Literatura Infantil</a>
-                <a class="dropdown-item" href="categoria.php?genero=naoficcao">Não Ficção</a>                
-                <a class="dropdown-item" href="categoria.php?genero=poesia">Poesia</a>
-                <a class="dropdown-item" href="categoria.php?genero=poesiaepica">Poesia Épica</a>                              
-                <a class="dropdown-item" href="categoria.php?genero=psicologia">Psicologia</a>
-                <a class="dropdown-item" href="categoria.php?genero=romance">Romance</a>                
+                <a class="dropdown-item" href="categoria.php?genero=Administra&ccedil;&atilde;o">Administração</a>
+                <a class="dropdown-item" href="categoria.php?genero=Autoajuda">Autoajuda</a>
+                <a class="dropdown-item" href="categoria.php?genero=Ci&ecirc;ncias">Ciências</a>
+                <a class="dropdown-item" href="categoria.php?genero=Fic&ccedil;&atilde;o Cient&iacute;fica">Ficção Ciêntífica</a>
+                <a class="dropdown-item" href="categoria.php?genero=Filosofia">Filosofia</a>
+                <a class="dropdown-item" href="categoria.php?genero=Hist&oacute;ria">História</a>
+                <a class="dropdown-item" href="categoria.php?genero=Literatura Infantil">Literatura Infantil</a>
+                <a class="dropdown-item" href="categoria.php?genero=N&atilde;o Fic&ccedil;&atilde;o">Não Ficção</a>
+                <a class="dropdown-item" href="categoria.php?genero=Poesia">Poesia</a>
+                <a class="dropdown-item" href="categoria.php?genero=Poesia &Eacute;pica">Poesia Épica</a>
+                <a class="dropdown-item" href="categoria.php?genero=Psicologia">Psicologia</a>
+                <a class="dropdown-item" href="categoria.php?genero=Romance">Romance</a>
             </li>
 
             <li class="nav-item">
@@ -58,18 +56,18 @@
                       
                       <div class="modal-body">
                         
-                        <form>
+                        <form  method="POST" action="select_logica_login_usuario.php">
                           <div class="form-group">
-                            <label for="email_login" class="col-form-label">E-mail:</label>
-                            <input type="text" class="form-control" placeholder="Digite seu e-mail de cadastro." id="email_login">
+                            <label for="email-login" class="col-form-label">E-mail:</label>
+                            <input type="text" class="form-control" placeholder="Digite seu e-mail de cadastro." id="email-login" name="email_login">
                           </div>
                           <div class="form-group">
-                            <label for="senha_login" class="col-form-label">Senha:</label>
-                            <input type="text" class="form-control" placeholder="Digite sua senha." id="senha_login">
+                            <label for="senha-login" class="col-form-label">Senha:</label>
+                            <input type="password" class="form-control" placeholder="Digite sua senha." id="senha-login" name="senha_login">
                           </div>
 
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary">Entrar</button>
+                            <button type="submit" class="btn btn-success">Entrar</button>
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                           </div>
                         </form>
@@ -92,22 +90,22 @@
                       
                       <div class="modal-body">
                         
-                        <form>
+                        <form method="POST" action="insert_logica_cadastro_usuario.php">
                           <div class="form-group">
-                            <label for="nome_cadastro" class="col-form-label">Nome completo:</label>
-                            <input type="text" class="form-control" placeholder="Digite seu nome completo." id="nome_cadastro">
+                            <label for="nome-cadastro" class="col-form-label">Nome completo:</label>
+                            <input type="text" class="form-control" placeholder="Digite seu nome completo." id="nome-cadastro" name="nome_cadastro">
                           </div>
                           <div class="form-group">
-                            <label for="email_cadastro" class="col-form-label">E-mail:</label>
-                            <input type="text" class="form-control" placeholder="Digite seu e-mail." id="email_cadastro">
+                            <label for="email-cadastro" class="col-form-label">E-mail:</label>
+                            <input type="text" class="form-control" placeholder="Digite seu e-mail." id="email-cadastro" name="email_cadastro">
                           </div>
                           <div class="form-group">
-                            <label for="senha_cadastro" class="col-form-label">Senha:</label>
-                            <input type="text" class="form-control" placeholder="Digite sua senha." id="senha_cadastro">
+                            <label for="senha-cadastro" class="col-form-label">Senha:</label>
+                            <input type="password" class="form-control" placeholder="Digite sua senha." id="senha-cadastro" name="senha_cadastro">
                           </div>
 
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary">Cadastre-se</button>
+                            <button type="submit" class="btn btn-success">Cadastre-se</button>
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                           </div>
                         </form>
@@ -122,6 +120,18 @@
             <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Pesquisar">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
           </form>
+
+          <a href="#">
+            <span style="font-size: 2em; color: white;">
+              <i class="fas fa-shopping-cart mr-xl-2 ml-xl-3 d-none d-xl-block"></i>
+            </span>
+          </a>
+
+          <form action="" method="POST" class="d-xl-none">
+            <button class="btn btn-outline-light my-2">Carrinho de Compras <span style="font-size: 1em; color: white;"><i class="fas fa-shopping-cart"></i>
+          </span></button>
+          </form>
+
         </div>
 
       </nav>

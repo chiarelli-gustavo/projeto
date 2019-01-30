@@ -20,12 +20,12 @@
     </head>
 <body>
     
-        <header class="container_fluid">
-            <?php include 'navbar.php'?>
-        </header>
-<div class="container-fluid">
-        <img src="imagens/tema-livraria-2600.jpg" alt="estante virtual cheia de livros" class="ml-0">
-</div>
+    <header class="container_fluid">
+        <?php include 'navbar-adm.php'?>
+    </header>
+    <div class="container-fluid">
+        <img src="imagens/tema-livraria-2600.jpg" width="100%" alt="estante virtual cheia de livros" class="ml-0">
+    </div>
 
     <section class="container">
         <div class="row">  <!--  classe para separar em coluna engloba todo o php-->
@@ -87,6 +87,7 @@
                     ?>
             </div>
         </section>
+    <?php include'footer.php'?>
     </body>
 </html>
     
