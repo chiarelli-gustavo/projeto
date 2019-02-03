@@ -30,7 +30,8 @@
       </section>
 
       <!-- Modal Login Administrador-->
-      <button type="button" class="btn text-primary btn-link" data-toggle="modal" data-target="#exampleModal3" data-whatever="@mdo">Login Administrador</button>
+      <!-- 
+      <button type="button" class="btn text-primary btn-link" data-toggle="modal" data-target="#exampleModal3" data-whatever="@mdo">Login Administrador</button> -->
 
       <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

@@ -4,7 +4,7 @@
 
 session_start();
 
-
+    $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = sha1($_POST['senha']);
 //sha1 criptografa o bloco inteiro correspondente a senha criada - não dá para descriptografar

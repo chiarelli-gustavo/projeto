@@ -20,9 +20,9 @@
         <img src="imagens/tema-livraria-2600.jpg" width="100%" alt="estante virtual cheia de livros" class="ml-0">
     </div>
     
-    <div><h2>Atualizar registros na livraria tabela livros</h2></div>
+    <div><h2 class="text-center mt-4">Atualizar registros da livraria:</h2></div>
         
-        <div class="container mt-5">
+        <div class="container mt-1">
             <div class="row">  <!--  classe para separar em coluna engloba todo o php-->
                     <?php
 
@@ -32,7 +32,7 @@
 
                     //Passo o comando que quero fazer no banco para variavel $sql
 
-                    $sql = "SELECT id, titulo, autor, ano, editora, genero, preco, foto FROM livros";
+                    $sql = "SELECT * FROM livros";
 
                     // pega o $sql e executa a consulta o comando $sql na conexão $conn (consulta)
                     $result = mysqli_query($conn, $sql);   // dados ainda em formato de máquina e não consegue  
@@ -45,9 +45,9 @@
 
                     ?>
                     
-                        <div class="col col-md-4 mt-4 align-self-xl-stretch p-7">  
+                        <div class="col-sm-6 col-md-4 mt-4 align-self-xl-stretch p-7">  
 		
-                                    <form method="post" action="update.php">
+                                    <form method="POST" action="update.php">
 
                                         <div class="form-group">
                                                 <span>
@@ -59,7 +59,7 @@
 
                                             <div class="form-group">
                                                 <span >
-                                                    <label for="titulo"> Titulo </label>
+                                                    <label for="titulo"> Título: </label>
                                                 </span>
                                                 <br />
                                                 <span>
@@ -69,7 +69,7 @@
                                     
                                             <div class="form-group">
                                                 <span>					
-                                                    <label for="autor"> Autor</label>
+                                                    <label for="autor"> Autor: </label>
                                                 </span>
                                                 <br />
                                                 <span>
@@ -79,7 +79,7 @@
 
                                             <div class="form-group">
                                                 <span>					
-                                                    <label for="ano"> Ano</label>
+                                                    <label for="ano"> Ano: </label>
                                                 </span>
                                                 <br />
                                                 <span>
@@ -90,7 +90,7 @@
 
                                              <div class="form-group">
                                                 <span>					
-                                                    <label for="editora"> Editora</label>
+                                                    <label for="editora"> Editora: </label>
                                                  </span>
                                                 <br />
                                                 <span>
@@ -101,7 +101,7 @@
 
                                             <div class="form-group">
                                                 <span>					
-                                                    <label for="genero"> Genero</label>
+                                                    <label for="genero"> Gênero: </label>
                                                 </span>
                                                 <br />
                                                 <span>
@@ -122,16 +122,27 @@
                                             </div>  
                                             <div class="form-group">
                                                 <span>					
-                                                    <label for="desconto"> Desconto</label>
+                                                    <label for="desconto"> Desconto: </label>
                                                 </span>
                                                 <br />
                                                 <span>
                                                     <input type="number" name="desconto" class="form-control" value="<?php echo $row['desconto']; ?>"/>
                                                 </span>
-                                            </div>        
+                                            </div>
+                                        
                                             <div class="form-group">
                                                 <span>					
-                                                    <label for="foto"> Nome e extensão da foto</label>
+                                                    <label for="desconto"> Descrição: </label>
+                                                </span>
+                                                <br />
+                                                <span>                                                   
+                                                    <textarea rows="4" class="form-control" cols="50" name="descricao"><?php echo $row['descricao']; ?></textarea>
+                                                </span>
+                                            </div>
+                                        
+                                            <div class="form-group">
+                                                <span>					
+                                                    <label for="foto"> Nome e extensão da foto: </label>
                                                 </span>
                                                 <br />
                                                 <span>
@@ -140,27 +151,27 @@
                                             </div>
                                             <div class="form-group">
                                                 <span>					
-                                                    <label for="estoque"> Estoque</label>
+                                                    <label for="estoque"> Estoque: </label>
                                                 </span>
                                                 <br />
                                                 <span>
-                                                    <input type="text" name="estoque" class="form-control" placeholder="quantidade no estoque"/>
+                                                    <input type="text" name="estoque" class="form-control" value="<?php echo $row['estoque']; ?>"/>
                                                 </span>
                                             </div>
                                             <div class="form-group">
                                                 <span>					
-                                                    <label for="isbn"> ISBN</label>
+                                                    <label for="isbn"> ISBN: </label>
 
                                                 </span>
                                                 <br />
                                                 <span>
-                                                    <input type="text" name="isbn" class="form-control" placeholder="isbn"/>
+                                                    <input type="text" name="isbn" class="form-control" value="<?php echo $row['isbn']; ?>"/>
                                                 </span>
                                             </div>
                                      
                       
-                                            <div>
-                                               <input type="submit" name="btnEnviar" value="Alterar" class="btn btn-primary mt-3" />
+                                            <div class="text-center">
+                                               <input type="submit" name="btnEnviar" value="ATUALIZAR" class="btn btn-success mt-3" />
                                             </div>
                                     </form>
                                 </div>        
@@ -170,7 +181,7 @@
                                         }
                                 }
                             else {
-                                echo "0 resultado";
+                                echo "Nenhum livro cadastrado no banco de dados da livraria.";
                                 }
                             mysqli_close ($conn);
                         ?>

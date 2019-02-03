@@ -21,63 +21,65 @@
         <img src="imagens/tema-livraria-2600.jpg" width="100%" alt="estante virtual cheia de livros" class="ml-0">
     </div>
 		<div class="container mt-5">
+			<div class="row"> 
             
 		<div class="col-md-2"></div>
+
 		<div class="col-md-8 bg-light p-3">	
-			<div><h2>Inserir registro na livraria tabela livros</h2></div>
+			<div class="text-center mb-3"><h2>Registrar novo livro:</h2></div>
             
 			
 			<form method="post" action="insert.php">
 					<div class="form-group">
 						<span >
-							<label for="titulo"> Titulo </label>
+							<label for="titulo"> Título: </label>
 						</span>
 						<br />
                         <span>
-							<input type="text" name="titulo" class="form-control" placeholder="titulo" required/>
+							<input type="text" name="titulo" class="form-control" placeholder="Título do livro" required/>
 						</span>	
 					</div>
 							<!-- facilitador: leva o cursor para o campo do id especificado-->
 							<!--o campo id sempre tem que ser único, sem repetir em nenhum outro campo -->
 					<div class="form-group">
 						<span>					
-							<label for="autor"> &nbsp;Autor</label>
+							<label for="autor"> &nbsp;Autor:</label>
 						<span>
 						<br />
 						<span>
-							<input type="text" name="autor" class="form-control" placeholder="autor"/>
+							<input type="text" name="autor" class="form-control" placeholder="Nome do autor"/>
 						</span>
 					</div>
                             
                     <div class="form-group">
 						<span>					
-							<label for="ano">  &nbsp;Ano</label>
+							<label for="ano">  &nbsp;Ano:</label>
 						<span>
 						<br />
 						<span>
-							<input type="text" name="ano" class="form-control" placeholder="ano"/>
+							<input type="text" name="ano" class="form-control" placeholder="Ano de publicação"/>
 						</span>
 					</div>
                             
                             
                      <div class="form-group">
 						<span>					
-							<label for="editora"> Editora</label>
+							<label for="editora"> Editora:</label>
 						<span>
 						<br />
 						<span>
-							<input type="text" name="editora" class="form-control" placeholder="editora"/>
+							<input type="text" name="editora" class="form-control" placeholder="Nome da editora"/>
 						</span>
 					</div>
                             
                             
                     <div class="form-group">
 						<span>					
-							<label for="genero"> Genero</label>
+							<label for="genero"> Gênero:</label>
 						<span>
 						<br />
 						<span>
-							<input type="text" name="genero" class="form-control" placeholder="gênero"/>
+							<input type="text" name="genero" class="form-control" placeholder="Gênero literário"/>
 						</span>
 					</div>
                             
@@ -87,57 +89,58 @@
 						<span>
 						<br />
 						<span>
-							<input type="text" name="preco" class="form-control" placeholder="preco"/>
+							<input type="text" name="preco" class="form-control" placeholder="Preço do livro"/>
 						</span>
-					</div>  
-                    c
+					</div>
+
                     <div class="form-group">
 						<span>					
-							<label for="foto"> Nome e extensão da foto</label>
+							<label for="foto"> Nome e extensão da foto:</label>
 						<span>
 						<br />
 						<span>
-							<input type="text" name="foto" class="form-control" placeholder="foto"/>
+							<input type="text" name="foto" class="form-control" placeholder="Ex: minhafoto.jpg"/>
 						</span>
 					</div> 
                             
                     <div class="form-group">
 						<span>					
-							<label for="descricao"> Descrição</label>
+							<label for="descricao"> Descrição:</label>
 						<span>
 						<br />
 						<span>
-                            <textarea class="form-control" name="descricao" rows="5" placeholder="descrição"/></textarea>
+                            <textarea class="form-control" name="descricao" rows="5" placeholder="Descrição do livro"/></textarea>
 							
 						</span>
 					</div>
                     <div class="form-group">
 						<span>					
-							<label for="estoque"> Estoque</label>
+							<label for="estoque"> Estoque:</label>
 						<span>
 						<br />
 						<span>
-							<input type="text" name="estoque" class="form-control" placeholder="quantidade no estoque"/>
+							<input type="text" name="estoque" class="form-control" placeholder="Quantidade no estoque"/>
 						</span>
 					</div>
                     <div class="form-group">
 						<span>					
-							<label for="isbn"> ISBN</label>
+							<label for="isbn"> ISBN:</label>
 						<span>
 						<br />
 						<span>
-							<input type="text" name="isbn" class="form-control" placeholder="isbn"/>
+							<input type="text" name="isbn" class="form-control" placeholder="Insira o código ISBN do livro"/>
 						</span>
 					</div>
 				
-                    <div>
-					   <input type="submit" name="btnEnviar" value="Enviar" class="btn btn-primary" />
-					   <input type="reset" name="btnLimpar" value="Limpar" class="btn bt-danger" />
+                    <div class="text-center">
+					   <input type="submit" name="btnEnviar" value="CADASTRAR" class="btn btn-success" />
+					   <input type="reset" name="btnLimpar" value="LIMPAR" class="btn btn-danger" />
 				    </div>
                 
 			</form>
 			</div>
 			<div class="col-md-2"></div>
+			</div>
 		</div>
         <?php include 'footer.php'; ?>
 </body>

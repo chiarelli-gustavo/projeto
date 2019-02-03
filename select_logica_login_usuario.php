@@ -15,9 +15,10 @@ session_start();
                 
 // Ele "chama" o arquivo conexão
 include 'conexao.php';
-              
-$email = $_POST["email_login"];
-$senha = sha1($_POST["senha_login"]);             
+
+$nome = $_POST['nome_login'];              
+$email = $_POST['email_login'];
+$senha = sha1($_POST['senha_login']);             
 
 
 // Passo o comando que quero fazer no banco para variável $sql          
@@ -28,7 +29,9 @@ $result = mysqli_query($conn, $sql);
 
 // Verifica se tem registros no resultado
 if (mysqli_num_rows($result) > 0) {
-  $_SESSION['email'] = $email;
+    $_SESSION['nome'] = $nome;
+    $_SESSION['email'] = $email;  
+    
   header ('location: index.php');
 }
 else {

@@ -65,7 +65,9 @@
                             <label for="senha-login" class="col-form-label">Senha:</label>
                             <input type="password" class="form-control" placeholder="Digite sua senha." id="senha-login" name="senha_login">
                           </div>
-
+                            <div class="form-group">                            
+                            <input type="hidden" name="nome_login">
+                          </div>
                           <div class="modal-footer">
                             <button type="submit" class="btn btn-success">Entrar</button>
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
@@ -121,7 +123,7 @@
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
           </form>
 
-          <a href="#">
+          <a href="carrinho.php">
             <span style="font-size: 2em; color: white;">
               <i class="fas fa-shopping-cart mr-xl-2 ml-xl-3 d-none d-xl-block"></i>
             </span>

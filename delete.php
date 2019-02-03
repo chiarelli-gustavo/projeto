@@ -65,6 +65,12 @@
                                 <span class="mt-2">
                                     <h4>R$<?php echo $row['preco']; ?></h4>
                                 </span> <br/>
+                                
+                                <form method="POST" action="delete_logica.php" class="text-center">
+                                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                    <button type="submit" class="btn btn-danger">EXCLUIR</button>
+                                </form>
+
                             </span>
                         </section>
                     </div>
@@ -82,7 +88,7 @@
             <br/><br/>
         </section>
 
-        <?php include'footer_adm_logado.php'?>
+        <?php include'footer.php'?>
 
     </body>
 </html>
